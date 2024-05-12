@@ -6,7 +6,7 @@ const NavBar = () => {
     <>
       <div className="nav-bar">
         <div className="nav-bar-item">
-          <a href="https://www.huffpost.com/" target="_blank">Book Appointment</a>
+          <a href="https://www.huffpost.com/" target="_blank">Book Now</a>
         </div>
         <div className="nav-bar-item">
           <a href="https://www.huffpost.com/" target="_blank">Hypnotherapy</a>
