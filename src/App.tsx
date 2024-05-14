@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import { Box, Stack } from '@mui/system';
+import { Stack } from '@mui/system';
 import { ReactComponent as Logo} from './ui/images/lifeleap-logo.svg';
 import NavBar from './ui/NavBar/NabBar';
 import Services from './ui/Services/Services';
