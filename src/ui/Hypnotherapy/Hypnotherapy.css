@@ -47,7 +47,7 @@ h2 {
 }
 
 .header-image {
-  background-image: url(../../../public/homepage-header-image.jpg);
+  background-image: url(../../../public/hypnotherapy-header-image.jpg);
   background-repeat: no-repeat;
   height: 400px;
   background-size: cover;
@@ -65,3 +65,19 @@ h2 {
   color: #61dafb;
 }
 
+.content-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-main {
+  padding: 20px;
+  width: 500px;
+}
+
+.content-main p {
+  text-align: left;
+  line-height: 24px;
+}

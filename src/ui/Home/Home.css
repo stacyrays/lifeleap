@@ -46,7 +46,7 @@ h2 {
   color: white;
 }
 
-.header-image {
+.header-image-home {
   background-image: url(../../../public/homepage-header-image.jpg);
   background-repeat: no-repeat;
   height: 400px;

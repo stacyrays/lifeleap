@@ -45,13 +45,13 @@ const theme = createTheme({
 const Home = () => {
   return (
     <>
-      <div className="header-image">
+      <div className="header-image-home">
         <div className="header-text">
           <h1>Take the <span className="header-text-italic">faster</span> path healing method</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">
-               Book Appointment
+               Book Session
               </Button>
             </Stack>
           </ThemeProvider>
