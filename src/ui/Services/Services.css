@@ -17,6 +17,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .service-panel-item {
   width: 20%;
   min-width: 300px;
@@ -28,8 +29,19 @@ h2 {
 }
 
 .service-panel-item:hover {
-  color: #0285FF;
+  color: #fff;
+  background-color: #0285FF;
   cursor: pointer;
+}
+
+.service-panel-icon {
+  color:#fff;
+  height: 50px; 
+  width: 50px;
+}
+
+.service-panel-icon-hovered {
+  color:#0285FF;
 }
 
 .service-text {
@@ -37,6 +49,23 @@ h2 {
   font-weight: 600;
   margin: 12px 0 20px 0;
 }
+
+.service-button {
+  background-color: #fff;
+  color:#0285FF;
+  padding: 10px;
+  border: 2px solid #0285FF;
+  border-radius: 4px;
+}
+
+.service-button-hovered {
+  background-color: #fff;
+  color:#0285FF;
+  padding: 10px;
+  border: 2px solid #0285FF;
+  border-radius: 4px;
+}
+
 
 @keyframes App-logo-spin {
   from {
