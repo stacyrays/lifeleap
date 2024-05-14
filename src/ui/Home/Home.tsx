@@ -1,4 +1,3 @@
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
@@ -48,7 +47,7 @@ const Home = () => {
     <>
       <div className="header-image">
         <div className="header-text">
-          <h1>Take the faster path healing method</h1>
+          <h1>Take the <span className="header-text-italic">faster</span> path healing method</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">

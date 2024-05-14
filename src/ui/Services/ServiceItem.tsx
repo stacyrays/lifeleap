@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from "react-router-dom";
 import SpatialAudioIcon from '@mui/icons-material/SpatialAudio';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import EmailIcon from '@mui/icons-material/Email';
@@ -54,15 +55,17 @@ const ServiceItem = (props: Props) => {
   
   return (
     <>
-      <div id={serviceType} className='service-panel-item'
-        onMouseEnter={() => setServiceHovered(true)}
-        onMouseLeave={() => setServiceHovered(false)}
-        onClick={() => handleClickService()}
-      >
-        {serviceIcon()}
-        <div id={serviceType} className="service-text">{serviceTypeCapitalized()}</div>
-        <div id={serviceType} className={isServiceHovered ? 'service-button-hovered' : 'service-button'}>{buttonText}</div>
-      </div>
+      <Link className="service-link-text" to={`/${serviceType}`}>
+        <div id={serviceType} className='service-panel-item'
+          onMouseEnter={() => setServiceHovered(true)}
+          onMouseLeave={() => setServiceHovered(false)}
+          onClick={() => handleClickService()}
+        >
+          {serviceIcon()}
+          <div id={serviceType} className="service-text">{serviceTypeCapitalized()}</div>
+          <div id={serviceType} className={isServiceHovered ? 'service-button-hovered' : 'service-button'}>{buttonText}</div>
+        </div>
+        </Link>
     </>
   )
 }

@@ -47,7 +47,7 @@ const Hypnotherapy = () => {
     <>
       <div className="header-image">
         <div className="header-text">
-          <h1>What is hypnotherapy?</h1>
+          <h1>What is <span className="header-text-italic">hypnotherapy</span>?</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">

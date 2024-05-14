@@ -21,7 +21,7 @@ const NavBar = () => {
       return (
         <>
           <div className="nav-bar-item">
-            <Link to="/">Book Now</Link>
+            <Link to="/book">Book Now</Link>
           </div>
           <div className="nav-bar-item">
             <Link to="/hypnotherapy">Hypnotherapy</Link>

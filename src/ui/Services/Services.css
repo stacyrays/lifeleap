@@ -68,6 +68,12 @@ h1 {
   border-radius: 4px;
 }
 
+.service-link-text {
+  text-decoration: none;
+  color:#0285FF;
+  font-weight: 600;
+}
+
 
 @keyframes App-logo-spin {
   from {

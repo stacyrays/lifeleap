@@ -49,9 +49,11 @@ const App = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <div className="app-logo">
-          <Logo />
-        </div>
+        <Link to="/">
+          <div className="app-logo">
+            <Logo />
+          </div>
+        </Link>
         <NavBar />
       </header>
       <Routes>
