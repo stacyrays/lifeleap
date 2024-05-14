@@ -1,0 +1,48 @@
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+
+h2 {
+  color: #6A6A6A;
+  font-size: 32px;
+}
+
+.service-panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service-panel-item {
+  width: 20%;
+  min-width: 300px;
+  height: 180px;
+  margin: 20px;
+  background-color: #efefef;
+  padding: 30px;
+  color: #6A6A6A;
+}
+
+.service-panel-item:hover {
+  color: #0285FF;
+  cursor: pointer;
+}
+
+.service-text {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 12px 0 20px 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

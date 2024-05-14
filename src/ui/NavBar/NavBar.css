@@ -6,6 +6,7 @@
 .nav-bar-item {
   padding: 8px;
   margin: 8px;
+  font-weight: 600;
 }
 
 .nav-bar-item a {
