@@ -46,8 +46,8 @@ h2 {
   color: white;
 }
 
-.header-image {
-  background-image: url(../../../public/homepage-header-image.jpg);
+.header-image-river {
+  background-image: url(../../../public/river-header-image.jpg);
   background-repeat: no-repeat;
   height: 400px;
   background-size: cover;
@@ -63,5 +63,22 @@ h2 {
 
 .app-link {
   color: #61dafb;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-main {
+  padding: 20px;
+  width: 500px;
+}
+
+.content-main p {
+  text-align: left;
+  line-height: 24px;
 }
 
