@@ -1,11 +1,9 @@
 import { Routes, Route, Outlet, Link } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { ReactComponent as Logo} from './ui/images/lifeleap-logo.svg';
-import NavBar from './ui/NavBar/NabBar';
-import Home from './ui/Home/Home';
-import River from './ui/River/River';
-import './App.css';
-import Hypnotherapy from './ui/Hypnotherapy/Hypnotherapy';
+import Button from '@mui/material/Button';
+import { Stack } from '@mui/system';
+import Services from '../Services/Services';
+import './Home.css';
 
 // Augment the palette to include an ochre color
 declare module '@mui/material/styles' {
@@ -45,26 +43,24 @@ const theme = createTheme({
   },
 });
 
-const App = () => {
+const Home = () => {
   return (
-    <div className="app">
-      <header className="app-header">
-        <div className="app-logo">
-          <Logo />
+    <>
+      <div className="header-image">
+        <div className="header-text">
+          <h1>Take the faster path healing method</h1>
+          <ThemeProvider theme={theme}>
+            <Stack gap={2} alignItems="center">
+              <Button variant="contained" color="orange">
+               Book Appointment
+              </Button>
+            </Stack>
+          </ThemeProvider>
         </div>
-        <NavBar />
-      </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hypnotherapy" element={<Hypnotherapy />} />
-        <Route path="/river" element={<River />} />
-          {/* Using path="*"" means "match anything", so this route
-              acts like a catch-all for URLs that we don't have explicit
-              routes for. */}
-          <Route path="*" element={<Home />} />
-      </Routes>
-    </div>
+      </div>
+      <Services />
+    </>
   );
 }
 
-export default App;
+export default Home;
