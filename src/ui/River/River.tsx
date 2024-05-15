@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
 import Services from '../Services/Services';
 import './River.css';
+import '../../App.css';
 
 // Augment the palette to include an ochre color
 declare module '@mui/material/styles' {

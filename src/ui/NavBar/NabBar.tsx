@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import { Link, Outlet } from "react-router-dom";
-import CloseIcon from '@mui/icons-material/Close';
+// import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import './NavBar.css';
 

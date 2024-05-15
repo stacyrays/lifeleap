@@ -1,15 +1,28 @@
 import ServiceItem from './ServiceItem';
 import './Services.css';
+import '../../App.css';
 
 const Services = () => {  
+  const serviceItems = [
+    {
+      serviceType: "hypnotherapy",
+      buttonText: "Learn More",
+    },
+    {
+      serviceType: "meditation",
+      buttonText: "Get Inspired",
+    },
+    {
+      serviceType: "email",
+      buttonText: "Get Free Gift",
+    },
+  ];
   return (
     <>
       <div className="service-panel-section">
         <div className="sub-header-text">Services</div>
         <div className="service-panel-container">
-          <ServiceItem serviceType="hypnotherapy" buttonText="Learn More" />
-          <ServiceItem serviceType="meditation" buttonText="Get Inspired" />
-          <ServiceItem serviceType="email" buttonText="Get Free Gift" />
+          {serviceItems.map(s => <ServiceItem serviceType={s.serviceType} buttonText={s.buttonText} />)}
         </div>
       </div>
     </>

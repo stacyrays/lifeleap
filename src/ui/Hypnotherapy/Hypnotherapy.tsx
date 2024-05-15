@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
 import Services from '../Services/Services';
 import './Hypnotherapy.css';
+import '../../App.css';
 
 // Augment the palette to include an ochre color
 declare module '@mui/material/styles' {
@@ -45,7 +46,7 @@ const theme = createTheme({
 const Hypnotherapy = () => {
   return (
     <>
-      <div className="header-image">
+      <div className="header-image-hypnotherapy">
         <div className="header-text">
           <h1>What is <span className="header-text-italic">hypnotherapy</span>?</h1>
           <ThemeProvider theme={theme}>
