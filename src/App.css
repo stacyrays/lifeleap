@@ -33,7 +33,7 @@ h2 {
 }
 
 .app-header {
-  height: 80px;
+  height: 74px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
