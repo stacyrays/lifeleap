@@ -3,25 +3,24 @@ import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
 import Services from '../Services/Services';
 import { theme } from '../NavBar/NabBar';
-import './Home.css';
+import './Team.css';
 import '../../App.css';
 
-const Home = () => {
+const Team = () => {
   return (
     <>
-      <div className="header-image-home">
+      <div className="header-image-river">
         <div className="header-text">
-          <h1>Take the <span className="header-text-italic">faster</span> path healing method</h1>
+          <h1>Meet our team of <span className="header-text-italic">certified</span> specialists</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">
-               Book Session
+               Book Appointment
               </Button>
             </Stack>
           </ThemeProvider>
         </div>
       </div>
-      <Services />
       <div className="content-container">
         <div className="content-main">
           <div className="content-main-left">
@@ -36,8 +35,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Services />
+
     </>
   );
 }
 
-export default Home;
+export default Team;

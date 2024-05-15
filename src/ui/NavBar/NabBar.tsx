@@ -97,7 +97,7 @@ const NavBar = () => {
             <Stack spacing={2} direction="row">
               <Link to="/book"><Button color="blue" variant="text">Book Session</Button></Link>
               <Link to="/hypnotherapy"><Button color="blue" variant="text">Hypnotherapy</Button></Link>
-              <Link to="/river"><Button color="blue" variant="text">Meet the Team</Button></Link>
+              <Link to="/team"><Button color="blue" variant="text">Meet the Team</Button></Link>
               <Link to="/contact"><Button color="blue" variant="text">Contact Us</Button></Link>
             </Stack>
           </ThemeProvider>
@@ -139,7 +139,7 @@ const NavBar = () => {
               <Stack spacing={2} direction="column">
                 <Link to="/book"><Button color="blue" variant="text" onClick={handleClose}>Book Session</Button></Link>
                 <Link to="/hypnotherapy"><Button color="blue" variant="text" onClick={handleClose}>Hypnotherapy</Button></Link>
-                <Link to="/river"><Button color="blue" variant="text" onClick={handleClose}>Meet the Team</Button></Link>
+                <Link to="/team"><Button color="blue" variant="text" onClick={handleClose}>Meet the Team</Button></Link>
                 <Link to="/contact"><Button color="blue" variant="text" onClick={handleClose}>Contact Us</Button></Link>
               </Stack>
             </ThemeProvider>
