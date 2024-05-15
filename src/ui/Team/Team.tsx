@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
 import Services from '../Services/Services';
-import { theme } from '../NavBar/NabBar';
+import { theme } from '../NavBar/NavBar';
 import './Team.css';
 import '../../App.css';
 
