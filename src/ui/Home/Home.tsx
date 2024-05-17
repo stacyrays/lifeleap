@@ -1,8 +1,9 @@
-import { ThemeProvider } from '@mui/material/styles';
+import {Link} from "react-router-dom";
+import {ThemeProvider} from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import { Stack } from '@mui/system';
+import {Stack} from '@mui/system';
 import Services from '../Services/Services';
-import { theme } from '../NavBar/NavBar';
+import {theme} from '../NavBar/NavBar';
 import './Home.css';
 import '../../App.css';
 
@@ -15,9 +16,11 @@ const Home = () => {
           {/* <div className="sub-header">We can help with hypnotherapy techniques</div> */}
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
-              <Button variant="contained" color="orange">
-                How It Helps
-              </Button>
+              <Link to="/helps">
+                <Button variant="contained" color="orange">
+                  How It Helps
+                </Button>
+              </Link>
             </Stack>
           </ThemeProvider>
         </div>

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
@@ -14,9 +15,11 @@ const Hypnotherapy = () => {
           <h1>What is <span className="header-text-italic">hypnotherapy</span>?</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
-              <Button variant="contained" color="orange">
-                How It Helps
-              </Button>
+              <Link to="/helps">
+                <Button variant="contained" color="orange">
+                  How It Helps
+                </Button>
+              </Link>
             </Stack>
           </ThemeProvider>
         </div>

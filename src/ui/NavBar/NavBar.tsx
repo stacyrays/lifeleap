@@ -104,7 +104,7 @@ const NavBar = () => {
         </>
       );
     } else {
-      return (<MenuIcon sx={{color: '#0285FF'}} onClick={handleClickOpen} />);
+      return (<MenuIcon sx={{color: '#0285FF', cursor: 'pointer'}} onClick={handleClickOpen} />);
     }
   }
 
@@ -137,7 +137,7 @@ const NavBar = () => {
           <div style={{margin: '20px'}}>
             <ThemeProvider theme={theme}>
               <Stack spacing={2} direction="column">
-                <Link to="/book"><Button color="blue" variant="text" onClick={handleClose}>Book Session</Button></Link>
+                <Link to="/helps"><Button color="blue" variant="text" onClick={handleClose}>How It Helps</Button></Link>
                 <Link to="/hypnotherapy"><Button color="blue" variant="text" onClick={handleClose}>Hypnotherapy</Button></Link>
                 <Link to="/team"><Button color="blue" variant="text" onClick={handleClose}>Meet the Team</Button></Link>
                 <Link to="/contact"><Button color="blue" variant="text" onClick={handleClose}>Contact Us</Button></Link>

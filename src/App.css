@@ -90,6 +90,9 @@ p {
 }
 
 @media (width <= 760px) {
+  h1 {
+    font-size: 40px;
+  }
   .content-main {
     display: flex;
     flex-wrap: wrap;
