@@ -19,13 +19,6 @@ const Contact = () => {
       <div className="header-image-hypnotherapy">
         <div className="header-text">
           <h1>Contact us today with any <span className="header-text-italic">questions</span></h1>
-          {/* <ThemeProvider theme={theme}>
-            <Stack gap={2} alignItems="center">
-              <Button variant="contained" color="orange">
-               Book Session
-              </Button>
-            </Stack>
-          </ThemeProvider> */}
         </div>
       </div>
       <div className="content-container">

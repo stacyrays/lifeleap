@@ -15,7 +15,7 @@ const Team = () => {
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">
-               Book Appointment
+                How It Helps
               </Button>
             </Stack>
           </ThemeProvider>

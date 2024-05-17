@@ -2,7 +2,7 @@
 .header-image-home {
   background-image: url(../../../public/homepage-header-image.jpg);
   background-repeat: no-repeat;
-  height: 400px;
+  height: 300px;
   background-size: cover;
   display: flex;
   flex-direction: column;

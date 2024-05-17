@@ -20,7 +20,8 @@
   margin: 20px;
   background-color: #efefef;
   padding: 30px;
-  color: #6A6A6A;
+  color: #0285FF;
+  border-radius: 8px;
 }
 
 .service-panel-item:hover {
@@ -50,7 +51,7 @@
   color:#0285FF;
   padding: 10px;
   border: 2px solid #0285FF;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .service-button-hovered {
@@ -58,7 +59,7 @@
   color:#0285FF;
   padding: 10px;
   border: 2px solid #0285FF;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .service-link-text {

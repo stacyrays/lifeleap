@@ -95,7 +95,7 @@ const NavBar = () => {
         <>
           <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-              <Link to="/book"><Button color="blue" variant="text">Book Session</Button></Link>
+              <Link to="/helps"><Button color="blue" variant="text">How It Helps</Button></Link>
               <Link to="/hypnotherapy"><Button color="blue" variant="text">Hypnotherapy</Button></Link>
               <Link to="/team"><Button color="blue" variant="text">Meet the Team</Button></Link>
               <Link to="/contact"><Button color="blue" variant="text">Contact Us</Button></Link>
@@ -129,9 +129,9 @@ const NavBar = () => {
               >
                 <CloseIcon />
               </IconButton>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+              {/* <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
                 Menu
-              </Typography>
+              </Typography> */}
             </Toolbar>
           </AppBar>
           <div style={{margin: '20px'}}>
@@ -144,15 +144,6 @@ const NavBar = () => {
               </Stack>
             </ThemeProvider>
           </div>
-          {/* <List>
-            <ListItemButton>
-              <ListItemText primary="Book Session" onClick={handleClose} />
-            </ListItemButton>
-            <Divider />
-            <ListItemButton>
-              <ListItemText primary="Hypnotherapy"  onClick={handleClose} />
-            </ListItemButton>
-          </List> */}
         </Dialog>
       </>
    );

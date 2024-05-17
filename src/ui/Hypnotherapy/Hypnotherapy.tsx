@@ -15,7 +15,7 @@ const Hypnotherapy = () => {
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">
-               Book Session
+                How It Helps
               </Button>
             </Stack>
           </ThemeProvider>

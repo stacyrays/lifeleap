@@ -12,10 +12,11 @@ const Home = () => {
       <div className="header-image-home">
         <div className="header-text">
           <h1>Take the <span className="header-text-italic">faster</span> path healing method</h1>
+          {/* <div className="sub-header">We can help with hypnotherapy techniques</div> */}
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">
               <Button variant="contained" color="orange">
-               Book Session
+                How It Helps
               </Button>
             </Stack>
           </ThemeProvider>

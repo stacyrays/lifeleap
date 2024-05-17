@@ -16,6 +16,12 @@ h2 {
   font-size: 32px;
 }
 
+p {
+  text-align: left;
+  line-height: 24px;
+  margin: 0;
+}
+
 .header-text {
   display: flex;
   justify-content: center;
@@ -23,6 +29,18 @@ h2 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.sub-header {
+  display: flex;
+  color: #fff;
+  font-size: 32px;
+  filter: drop-shadow(5px 5px 10px #000000);
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
 }
 
 .header-text-italic {
@@ -59,11 +77,6 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   padding: 20px;
-}
-
-.content-main p {
-  text-align: left;
-  line-height: 24px;
 }
 
 .content-main-left,
