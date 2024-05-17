@@ -1,4 +1,4 @@
-.sub-header-text {
+.services-sub-header-text {
   color: #6A6A6A;
   font-size: 30px;
   font-weight: 600;
@@ -43,7 +43,7 @@
 .service-text {
   font-size: 30px;
   font-weight: 600;
-  margin: 12px 0 20px 0;
+  margin: 12px 0 12px 0;
 }
 
 .service-button {
@@ -66,4 +66,11 @@
   text-decoration: none;
   color:#0285FF;
   font-weight: 600;
+}
+
+.service-body-text {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
 }

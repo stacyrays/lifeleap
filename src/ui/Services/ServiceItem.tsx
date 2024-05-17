@@ -8,10 +8,11 @@ import './Services.css';
 type Props = {
   serviceType: string;
   buttonText: string;
+  serviceBodyText?: string;
 }
 
 const ServiceItem = (props: Props) => {
-  const {serviceType, buttonText} = props;
+  const {serviceType, buttonText, serviceBodyText} = props;
   const [isServiceHovered, setServiceHovered] = useState(false);
 
   const handleClickService = () => {
@@ -63,6 +64,7 @@ const ServiceItem = (props: Props) => {
         >
           {serviceIcon()}
           <div id={serviceType} className="service-text">{serviceTypeCapitalized()}</div>
+          <div id={serviceType} className="service-body-text">{serviceBodyText ? serviceBodyText : ''}</div>
           <div id={serviceType} className={isServiceHovered ? 'service-button-hovered' : 'service-button'}>{buttonText}</div>
         </div>
         </Link>
