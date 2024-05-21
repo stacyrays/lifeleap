@@ -1,5 +1,6 @@
 
 .header-image-home {
+  position: relative;
   background-image: url(../../../public/homepage-header-image.jpg);
   background-repeat: no-repeat;
   height: 300px;

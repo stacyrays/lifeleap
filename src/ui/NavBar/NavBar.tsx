@@ -53,15 +53,15 @@ declare module '@mui/material/Button' {
 export const theme = createTheme({
   palette: {
     orange: {
-      main: '#FF4E02',
-      light: '#FF611D',
-      dark: '#D03F01',
+      main: '#F2780D',
+      light: '#FF983E',
+      dark: '#B05505',
       contrastText: '#FFFFFF',
     },
     blue: {
-      main: '#0285FF',
-      light: '#2B99FF',
-      dark: '#006ED4',
+      main: '#046E8F',
+      light: '#05A4D6',
+      dark: '#04495E',
       contrastText: '#FFFFFF',
     },
   },
@@ -95,16 +95,15 @@ const NavBar = () => {
         <>
           <ThemeProvider theme={theme}>
             <Stack spacing={2} direction="row">
-              <Link to="/helps"><Button color="blue" variant="text">How It Helps</Button></Link>
-              <Link to="/hypnotherapy"><Button color="blue" variant="text">Hypnotherapy</Button></Link>
-              <Link to="/team"><Button color="blue" variant="text">Meet the Team</Button></Link>
+              <Link to="/services"><Button color="blue" variant="text">Services</Button></Link>
+              <Link to="/team"><Button color="blue" variant="text">Team</Button></Link>
               <Link to="/contact"><Button color="blue" variant="text">Contact Us</Button></Link>
             </Stack>
           </ThemeProvider>
         </>
       );
     } else {
-      return (<MenuIcon sx={{color: '#0285FF', cursor: 'pointer'}} onClick={handleClickOpen} />);
+      return (<MenuIcon sx={{color: '#046E8F', cursor: 'pointer'}} onClick={handleClickOpen} />);
     }
   }
 
@@ -119,7 +118,7 @@ const NavBar = () => {
           onClose={handleClose}
           TransitionComponent={Transition}
         >
-          <AppBar sx={{ position: 'relative' }}>
+          <AppBar sx={{ position: 'relative', backgroundColor: 'transparent', boxShadow: 'none' }}>
             <Toolbar>
               <IconButton
                 edge="start"
@@ -127,7 +126,7 @@ const NavBar = () => {
                 onClick={handleClose}
                 aria-label="close"
               >
-                <CloseIcon />
+                <CloseIcon sx={{color: '#046E8F'}}/>
               </IconButton>
               {/* <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
                 Menu
@@ -137,8 +136,7 @@ const NavBar = () => {
           <div style={{margin: '20px'}}>
             <ThemeProvider theme={theme}>
               <Stack spacing={2} direction="column">
-                <Link to="/helps"><Button color="blue" variant="text" onClick={handleClose}>How It Helps</Button></Link>
-                <Link to="/hypnotherapy"><Button color="blue" variant="text" onClick={handleClose}>Hypnotherapy</Button></Link>
+                <Link to="/services"><Button color="blue" variant="text" onClick={handleClose}>Services</Button></Link>
                 <Link to="/team"><Button color="blue" variant="text" onClick={handleClose}>Meet the Team</Button></Link>
                 <Link to="/contact"><Button color="blue" variant="text" onClick={handleClose}>Contact Us</Button></Link>
               </Stack>

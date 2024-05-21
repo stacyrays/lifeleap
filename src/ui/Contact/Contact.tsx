@@ -4,7 +4,7 @@ import { Stack } from '@mui/system';
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import Box from '@mui/material/Box';
-import Services from '../Services/Services';
+import ServicePanels from '../ServicePanels/ServicePanels';
 import { theme } from '../NavBar/NavBar';
 import './Contact.css';
 import '../../App.css';
@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <div className="header-image-hypnotherapy">
         <div className="header-text">
-          <h1>Contact us today with any <span className="header-text-italic">questions</span></h1>
+          <h1>Contact us today</h1>
         </div>
       </div>
       <div className="content-container">
@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Services />
+      <ServicePanels />
 
     </>
   );

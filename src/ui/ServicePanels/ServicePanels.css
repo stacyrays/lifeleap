@@ -1,0 +1,76 @@
+.services-sub-header-text {
+  color: #6A6A6A;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.service-panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-panel-item {
+  width: 20%;
+  min-width: 300px;
+  height: 180px;
+  margin: 20px;
+  background-color: #efefef;
+  padding: 30px;
+  color: #046E8F;
+  border-radius: 8px;
+}
+
+.service-panel-item:hover {
+  color: #fff;
+  background-color: #046E8F;
+  cursor: pointer;
+}
+
+.service-panel-icon {
+  color:#fff;
+  height: 50px; 
+  width: 50px;
+}
+
+.service-panel-icon-hovered {
+  color:#046E8F;
+}
+
+.service-text {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 12px 0 12px 0;
+}
+
+.service-button {
+  background-color: #fff;
+  color:#046E8F;
+  padding: 10px;
+  border: 2px solid #046E8F;
+  border-radius: 8px;
+}
+
+.service-button-hovered {
+  background-color: #fff;
+  color:#046E8F;
+  padding: 10px;
+  border: 2px solid #046E8F;
+  border-radius: 8px;
+}
+
+.service-link-text {
+  text-decoration: none;
+  color:#046E8F;
+  font-weight: 600;
+}
+
+.service-body-text {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}

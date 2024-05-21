@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import SpatialAudioIcon from '@mui/icons-material/SpatialAudio';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import EmailIcon from '@mui/icons-material/Email';
-import './Services.css';
+import './ServicePanels.css';
 
 type Props = {
   serviceType: string;
@@ -12,7 +12,7 @@ type Props = {
   title: string;
 }
 
-const ServiceItem = (props: Props) => {
+const ServicePanel = (props: Props) => {
   const {serviceType, buttonText, serviceBodyText, title} = props;
   const [isServiceHovered, setServiceHovered] = useState(false);
 
@@ -73,4 +73,4 @@ const ServiceItem = (props: Props) => {
   )
 }
 
-export default ServiceItem;
+export default ServicePanel;

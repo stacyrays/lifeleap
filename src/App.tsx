@@ -1,8 +1,8 @@
 import { Routes, Route, Outlet, Link } from 'react-router-dom';
-import { ReactComponent as Logo} from './ui/images/lifeleap-logo.svg';
+import { ReactComponent as Logo} from './ui/images/life-leap-logo-052124.svg';
 import NavBar from './ui/NavBar/NavBar';
 import Home from './ui/Home/Home';
-import Hypnotherapy from './ui/Hypnotherapy/Hypnotherapy';
+import Services from './ui/Services/Services';
 import Team from './ui/Team/Team';
 import Contact from './ui/Contact/Contact';
 
@@ -21,7 +21,7 @@ const App = () => {
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/hypnotherapy" element={<Hypnotherapy />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
           {/* Using path="*"" means "match anything", so this route

@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { Stack } from '@mui/system';
-import Services from '../Services/Services';
+import ServicePanels from '../ServicePanels/ServicePanels';
 import { theme } from '../NavBar/NavBar';
 import './Team.css';
 import '../../App.css';
@@ -12,16 +12,7 @@ const Team = () => {
     <>
       <div className="header-image-river">
         <div className="header-text">
-          <h1>Meet our team of <span className="header-text-italic">certified</span> specialists</h1>
-          <ThemeProvider theme={theme}>
-            <Stack gap={2} alignItems="center">
-              <Link to="/helps">
-                <Button variant="contained" color="orange">
-                  How It Helps
-                </Button>
-              </Link>
-            </Stack>
-          </ThemeProvider>
+          <h1>Team of <em>certified</em> specialists</h1>
         </div>
       </div>
       <div className="content-container">
@@ -38,7 +29,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <Services />
+      <ServicePanels />
 
     </>
   );

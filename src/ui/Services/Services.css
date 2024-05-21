@@ -1,76 +1,8 @@
-.services-sub-header-text {
-  color: #6A6A6A;
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 30px;
-}
-
-.service-panel-container {
+.header-image-hypnotherapy {
+  background-image: url(../../../public/hypnotherapy-header-image.jpg);
+  background-repeat: no-repeat;
+  height: 120px;
+  background-size: cover;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.service-panel-item {
-  width: 20%;
-  min-width: 300px;
-  height: 180px;
-  margin: 20px;
-  background-color: #efefef;
-  padding: 30px;
-  color: #0285FF;
-  border-radius: 8px;
-}
-
-.service-panel-item:hover {
-  color: #fff;
-  background-color: #0285FF;
-  cursor: pointer;
-}
-
-.service-panel-icon {
-  color:#fff;
-  height: 50px; 
-  width: 50px;
-}
-
-.service-panel-icon-hovered {
-  color:#0285FF;
-}
-
-.service-text {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 12px 0 12px 0;
-}
-
-.service-button {
-  background-color: #fff;
-  color:#0285FF;
-  padding: 10px;
-  border: 2px solid #0285FF;
-  border-radius: 8px;
-}
-
-.service-button-hovered {
-  background-color: #fff;
-  color:#0285FF;
-  padding: 10px;
-  border: 2px solid #0285FF;
-  border-radius: 8px;
-}
-
-.service-link-text {
-  text-decoration: none;
-  color:#0285FF;
-  font-weight: 600;
-}
-
-.service-body-text {
-  text-decoration: none;
-  font-size: 16px;
-  margin-bottom: 16px;
-  font-weight: 400;
+  flex-direction: column;
 }
