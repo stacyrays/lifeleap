@@ -9,10 +9,11 @@ type Props = {
   serviceType: string;
   buttonText: string;
   serviceBodyText?: string;
+  title: string;
 }
 
 const ServiceItem = (props: Props) => {
-  const {serviceType, buttonText, serviceBodyText} = props;
+  const {serviceType, buttonText, serviceBodyText, title} = props;
   const [isServiceHovered, setServiceHovered] = useState(false);
 
   const handleClickService = () => {
@@ -50,7 +51,7 @@ const ServiceItem = (props: Props) => {
 
   const serviceTypeCapitalized = () => {
     return (
-      serviceType.charAt(0).toUpperCase() + serviceType.slice(1)
+      title.charAt(0).toUpperCase() + title.slice(1)
     );
   };
   
