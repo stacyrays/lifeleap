@@ -6,12 +6,22 @@ import { theme } from '../NavBar/NavBar';
 import './Services.css';
 import '../../App.css';
 
-const Hypnotherapy = () => {
+const Services = () => {
   return (
     <>
-      <div className="header-image-hypnotherapy">
+      <div className="header-image-home">
         <div className="header-text">
-          <h1>Services</h1>
+          <div className='header-smaller-text'>The <em>faster</em> path healing method with</div>
+          <h1>Neuro Linguistic Programming</h1>
+          <ThemeProvider theme={theme}>
+            <Stack gap={2} alignItems="center">
+              <Link to="/services">
+                <Button variant="contained" color="orange">
+                  View Services
+                </Button>
+              </Link>
+            </Stack>
+          </ThemeProvider>
         </div>
       </div>
       <div className="content-container">
@@ -31,4 +41,4 @@ const Hypnotherapy = () => {
   );
 }
 
-export default Hypnotherapy;
+export default Services;

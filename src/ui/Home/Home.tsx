@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <div className="header-image-home">
         <div className="header-text">
-          <div className='header-smaller-text'>The <em>faster</em> path healing method</div>
+          <div className='header-smaller-text'>The <em>faster</em> path healing method with</div>
           <h1>Neuro Linguistic Programming</h1>
           <ThemeProvider theme={theme}>
             <Stack gap={2} alignItems="center">

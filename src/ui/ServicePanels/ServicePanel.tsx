@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from 'react-router-dom';
 import SpatialAudioIcon from '@mui/icons-material/SpatialAudio';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import EmailIcon from '@mui/icons-material/Email';
@@ -13,16 +13,18 @@ type Props = {
 }
 
 const ServicePanel = (props: Props) => {
+  const navigate = useNavigate();
+
   const {serviceType, buttonText, serviceBodyText, title} = props;
   const [isServiceHovered, setServiceHovered] = useState(false);
 
   const handleClickService = () => {
     if (serviceType === 'hypnotherapy') {
-      return console.log('navigate to hypnotherapy route');
+      return navigate('/hypnotherapy');
     } else if (serviceType === 'meditation') {
-      return console.log('navigate to meditation route');
+      return navigate('/meditation');
     } 
-    return console.log('navigate to email route');
+    return navigate('/insights');
   }
 
   const serviceIcon = () => {
