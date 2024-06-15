@@ -28,7 +28,10 @@ const Home = () => {
       <div className="content-container">
         <div className="content-main">
           <div className="content-main-left">
-            <div className="sub-header-text">What is NLP?</div>
+            <img src="https://www.verywellmind.com/thmb/39_t3xNP_43YUiUnyRVAtqfckBY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/positive-blonde-middle-aged-woman-psychologist-talking-to-girl-patient-1213531990-745e910347594bf0a0569e7e1b908105.jpg" width="100%" height="auto"/>
+          </div>
+          <div className="content-main-right">
+          <div className="sub-header-text">What is NLP?</div>
             <p>
               NLP stands for Neuro Linguistic Programming and is a tool for repatterning your thoughts on a deep and unconscious level. It allows you to create new behaviors and new strategies for navigating your world. By negotiating with the unconscious mind, rapid or instantaneous changes are generated. By understanding how you make a map of your particular reality, a skilled NLP practitioner can shift you from your present state to one that allows you to easily change your patterns and behaviors. 
             </p>
@@ -38,9 +41,6 @@ const Home = () => {
 
               In the hands of a skilled hypnotist, you can be guided into a deeply relaxed state, allowing you to rest your conscious mind and make changes at a deep level using NLP.
             </p>
-          </div>
-          <div className="content-main-right">
-            <img src="https://www.verywellmind.com/thmb/39_t3xNP_43YUiUnyRVAtqfckBY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/positive-blonde-middle-aged-woman-psychologist-talking-to-girl-patient-1213531990-745e910347594bf0a0569e7e1b908105.jpg" width="100%" height="auto"/>
           </div>
         </div>
       </div>
